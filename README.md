@@ -69,7 +69,7 @@ Decision rule built into the model: **scale only at LTV/CAC ≥ 1.5**, test betw
 3. **Retention** — calendar reminders before every meeting, so there is always a next reason to practise
 
 **Supporting work in this repo:**
-- [`competitors/`](competitors/) — research of competitors' Meta ads in the US: hooks, formats, offers
+- [`competitors/`](competitors/) — research of competitors' Meta ads in the US: hooks, formats, offers (ad screenshots from the public Meta Ad Library, each linked to its source, used for research and commentary)
 - [`creatives/`](creatives/) — our static and video ads, written from the pain, not from features; every ad ends with the free 10-second test
 - [`capstone/`](capstone/) — pitch deck, demo video and the pitch script in English and Russian
 
