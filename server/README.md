@@ -42,7 +42,7 @@ DEV_ECHO_CODES=1 PADDLE_WEBHOOK_SECRET=x npm start
    curl -fsSL https://deb.nodesource.com/setup_22.x | sudo bash - && sudo apt install -y nodejs
    sudo useradd -r -s /usr/sbin/nologin speakline
    sudo mkdir -p /srv/speakline /var/lib/speakline && sudo chown speakline /var/lib/speakline
-   sudo git clone https://github.com/something02/Speakline.git /srv/speakline
+   sudo git clone https://github.com/daulet-tuzelbek/Speakline.git /srv/speakline
    cd /srv/speakline/server && sudo npm ci --omit=dev
    ```
 3. **Настройки.** `sudo cp .env.example .env && sudo nano .env`, затем `sudo chmod 600 .env`.

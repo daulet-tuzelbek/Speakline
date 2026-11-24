@@ -1,6 +1,6 @@
 #!/bin/bash
 # One-shot install on a fresh Ubuntu/Debian VM (e.g. Google Cloud e2-micro).
-# Usage: curl -fsSL https://raw.githubusercontent.com/something02/Speakline/main/server/deploy/bootstrap.sh | sudo bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/daulet-tuzelbek/Speakline/main/server/deploy/bootstrap.sh | sudo bash
 # Domain defaults to <external-ip>.sslip.io (free, no DNS needed). Override: sudo DOMAIN=api.example.com bash bootstrap.sh
 # Secrets are NOT set here: after install, put your keys into /srv/speakline/server/.env and run: sudo systemctl restart speakline
 set -euo pipefail
@@ -25,13 +25,13 @@ fi
 
 id speakline >/dev/null 2>&1 || useradd -r -s /usr/sbin/nologin speakline
 mkdir -p /var/lib/speakline && chown speakline /var/lib/speakline
-if [ -d /srv/speakline/.git ]; then git -C /srv/speakline pull -q; else git clone -q https://github.com/something02/Speakline.git /srv/speakline; fi
+if [ -d /srv/speakline/.git ]; then git -C /srv/speakline pull -q; else git clone -q https://github.com/daulet-tuzelbek/Speakline.git /srv/speakline; fi
 cd /srv/speakline/server && npm ci --omit=dev --silent
 
 if [ ! -f .env ]; then
   sed -e "s#^DB_PATH=.*#DB_PATH=/var/lib/speakline/speakline.db#" \
-      -e "s#^APP_ORIGIN=.*#APP_ORIGIN=https://something02.github.io#" \
-      -e "s#^APP_URL=.*#APP_URL=https://something02.github.io/Speakline/#" \
+      -e "s#^APP_ORIGIN=.*#APP_ORIGIN=https://daulet-tuzelbek.github.io#" \
+      -e "s#^APP_URL=.*#APP_URL=https://daulet-tuzelbek.github.io/Speakline/#" \
       -e "s#^STATIC_DIR=.*#STATIC_DIR=#" \
       -e "s#^SMTP_URL=.*#SMTP_URL=#" \
       -e "s#^ADMIN_KEY=.*#ADMIN_KEY=$(openssl rand -hex 16)#" \

@@ -12,8 +12,8 @@ Speakline is a web-first speaking coach: a 2-minute quiz and a 10-second voice t
 
 | | |
 |---|---|
-| ▶️ **Web funnel** (start here) | [something02.github.io/speakline/start](https://something02.github.io/speakline/start/) |
-| 📱 **App** | [something02.github.io/speakline](https://something02.github.io/speakline/?app=1) |
+| ▶️ **Web funnel** (start here) | [daulet-tuzelbek.github.io/Speakline/start](https://daulet-tuzelbek.github.io/Speakline/start/) |
+| 📱 **App** | [daulet-tuzelbek.github.io/Speakline](https://daulet-tuzelbek.github.io/Speakline/?app=1) |
 | 🖥 **Desktop demo** | open either link on a laptop: the live product runs inside a phone frame, with a side panel explaining each funnel step |
 
 Use Chrome (desktop or Android) or Safari on iPhone and allow the microphone. Payments run in **Paddle test mode**: card `4242 4242 4242 4242`, any future date, CVC `100`.
